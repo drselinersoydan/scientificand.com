@@ -6,14 +6,122 @@
   <title>Scientific&</title>
   <meta name="description" content="Scientific& — Evidence-led supplementation." />
   <style>
-    body { margin: 0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; }
-    .wrap { max-width: 720px; margin: 0 auto; padding: 64px 24px; line-height: 1.5; }
-    h1 { font-size: 40px; margin: 0 0 8px; letter-spacing: -0.02em; }
-    .sub { font-size: 18px; margin: 0 0 28px; color: #333; }
-    p { font-size: 18px; margin: 0 0 14px; color: #111; }
-    .spacer { height: 10px; }
-    a { color: inherit; text-decoration: none; border-bottom: 1px solid #999; }
-    a:hover { border-bottom-color: #111; }
+    <!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Scientific&</title>
+  <meta name="description" content="Scientific& — Evidence-led supplementation." />
+
+  <style>
+    :root{
+      --text: #111;
+      --muted: #6b6b6b;
+      --bg: #ffffff;
+      --max: 720px;
+    }
+
+    body{
+      margin:0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    /* Optional “banner”: subtle, premium, non-marketing */
+    .banner{
+      height: 14px;
+      background: linear-gradient(90deg, #111 0%, #6b6b6b 35%, #d9d9d9 100%);
+      opacity: 0.18;
+    }
+
+    .wrap{
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 88px 24px 96px;
+    }
+
+    h1{
+      font-size: 44px;       /* big */
+      line-height: 1.05;
+      letter-spacing: -0.02em;
+      margin: 0 0 10px;
+      font-weight: 600;
+    }
+
+    .sub{
+      font-size: 20px;       /* bigger than body */
+      line-height: 1.4;
+      margin: 0 0 44px;
+      color: var(--muted);   /* lighter */
+      font-weight: 500;
+    }
+
+    p{
+      font-size: 17px;
+      line-height: 1.7;
+      margin: 0 0 22px;
+    }
+
+    .gap{
+      height: 18px;          /* creates your “breathing space” blocks */
+    }
+
+    .contact{
+      margin-top: 10px;
+    }
+
+    a{
+      color: inherit;
+      text-decoration: none;
+      border-bottom: 1px solid rgba(17,17,17,0.35);
+      padding-bottom: 2px;
+    }
+    a:hover{
+      border-bottom-color: rgba(17,17,17,0.85);
+    }
+
+    /* mobile tune */
+    @media (max-width: 520px){
+      .wrap{ padding-top: 72px; }
+      h1{ font-size: 40px; }
+      .sub{ font-size: 19px; }
+      p{ font-size: 16.5px; }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Delete this div if you decide you want zero banner -->
+  <div class="banner"></div>
+
+  <main class="wrap">
+    <h1>Scientific&amp;</h1>
+    <div class="sub">Evidence-led supplementation.</div>
+
+    <p>Science isn’t certainty.<br>
+       It’s a disciplined way of working with complexity.</p>
+
+    <div class="gap"></div>
+
+    <p>At Scientific&amp;, science is the standard we work from.</p>
+
+    <div class="gap"></div>
+
+    <p>Scientific&amp; is a physician-founded supplement company, currently in early development and supplier selection.</p>
+
+    <div class="gap"></div>
+    <div class="gap"></div>
+
+    <p class="contact">For manufacturing or partnership inquiries:<br>
+      <a href="mailto:hello@scientificand.com">hello@scientificand.com</a>
+    </p>
+  </main>
+</body>
+</html>
   </style>
 </head>
 <body>
